@@ -1,0 +1,176 @@
+.services h1 {
+    margin: 70px auto 50px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.services .service {
+    position: relative;
+    width: calc((100% - 400px) / 3);
+    margin-left: 150px;
+    margin-top: 120px;
+}
+.services .service::before{
+    content: '';
+    position: absolute;
+    inset: -10px 50px;
+    border-bottom: 4px var(--primary-color) solid;    
+    border-top: 4px var(--primary-color) solid; 
+    z-index: -1;
+    transform: skewY(15deg);
+}
+.services .service::after{
+    content: '';
+    position: absolute;
+    inset: 50px -10px;
+    border-left: 4px var(--primary-color) solid;    
+    border-right: 4px var(--primary-color) solid; 
+    z-index: -1;
+    transform: skewX(10deg);
+}
+.services .service:nth-child(2)::before{
+    inset: -40px 50px;
+}
+
+.content {
+    background-color: var(--sercive-color);
+    border-radius: 20px;
+    height: 100%;
+    padding-bottom: 25px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.service:nth-child(2) .content{
+    transform: scaleY(107%);
+    position: relative;
+}
+
+.service:nth-child(2) .content::after{
+    content: 'perimum';
+    position: absolute;
+    right: -30px;
+    top: 35px;
+    padding: 0px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    transform: skew(-45deg, 45deg);
+}
+
+.services .service:nth-child(3) {
+    margin-right: 150px;
+}
+
+.services .service .icon {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: fit-content;
+    border: 5px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.services .service .icon+p {
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.service .item {
+    padding: 15px 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.item p {
+    color: var(--secondary-color);
+}
+
+.service .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0px 20px;
+}
+
+.service .price p {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.service button {
+    background-color: var(--primary-color);
+    padding: 11px 125px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.service button:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+}
+
+.true {
+    color: rgb(14, 207, 4);
+}
+
+.false {
+    color: red;
+}
+
+.service:hover::before{
+    transition: 1s ease-in-out;
+    transform: skewY(0deg);
+}
+.service:hover::after{
+    transition: 1s ease-in-out;
+    transform: skewX(0deg);
+}
+.service:hover .icon {
+    transition: 0.5s;
+    box-shadow: 0px 10px 10px 200px var(--primary-color) inset, 10px 0px 0px 5500px var(--primary-color);
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+
+.service:hover .icon+p {
+    color: var(--main-color);
+    transition: 0.8s;
+
+}
+
+.service:hover p {
+    color: var(--main-color);
+    transition: 0.8s;
+
+}
+
+.service:hover button {
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    transition: 0.6s;
+}
+
+.service:hover button:hover {
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.service:nth-child(2):hover .content::after{
+    background-color: var(--main-color);
+    color: var(--secondary-color)
+}

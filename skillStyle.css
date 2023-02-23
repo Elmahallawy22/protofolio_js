@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+section{
+    padding-top: 50px;
+}
+.define{
+    margin-left: 60px;
+}
+.define p{
+    margin-bottom: 20px;
+    width: fit-content;
+    border-bottom: 1px var(--secondary-color) solid;
+}
+.define span{
+    color: var(--primary-color);
+}
+.define h2{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+.skills {
+    flex-direction: column;
+    margin: 20px 60px 40px;
+    width: 40%;
+}
+.skills h2{
+    font-size: 60px;
+    margin-bottom: 60px;    
+    width: 100%;
+    text-align: start;
+}
+.skill {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.skill p {
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: bold;
+}
+.skill .pars {
+    background-color: var(--secondary-color);
+    height: 10px;
+    width: 75%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.pars span {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    transition: all 0.5s ease-out;
+    left: 0;
+    top: 0;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    letter-spacing: 2px;
+    color: var(--secondary-color);
+    padding-left: 15px;
+    font-weight: 600;
+    font-size: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.define h2 , .skills h2{
+    position: relative;
+}
+.define h2::before , 
+.skills h2::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    background-color: var(--secondary-color);
+    left: 0;
+    bottom: 0;
+}
+.experiences{
+    margin: 50px ;
+}
+.experiences h2{
+    width: fit-content;
+    display: flex;
+    margin: 0 auto 20px;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 4px var(--secondary-color) solid;
+}
+.experience{
+    position: relative;
+}
+.experience h3{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 0;
+    border-bottom: 3px var(--primary-color) solid;
+}
+.experience::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 93%;
+    background-color: var(--secondary-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.exp{
+    width: calc(50% - 20px);
+    padding: 20px;
+    margin-top: 20px;
+}
+.right{
+    float: right ;
+    position: relative;
+    border-radius: 0px 10px 10px 0;
+}
+.left{
+    float: left;
+    position: relative;
+    border-radius: 10px 0px 0px 10px;
+}
+.clear{
+    clear: both;
+}
+.exp h4 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+.exp p{
+    color: var(--main-color);
+    font-size: 20px;
+}
+.left::before,
+.right::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.left::before{
+    border-color:transparent transparent transparent var(--primary-color) ;
+    right: -20px ;
+}
+.right::before{
+    border-color:transparent var(--primary-color) transparent transparent ;
+    left: -20px ;
+}
+.left::after ,
+.right::after{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 3px var(--secondary-color) solid;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.left::after{
+    right: -30px;
+}
+.right::after{
+    left:  -30px;
+}

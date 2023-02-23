@@ -1,0 +1,67 @@
+/* :root {
+    --main-color: #f6f6f6;
+    --secondary-color: #222;
+    --primary-color:  #fa5b0f;
+} */
+/* ------------------- color -----------------------------*/
+.c-m{
+    color: var(--main-color);
+}
+.c-s{
+    color: var(--secondary-color);
+}
+.c-p{
+    color: var(--primary-color);
+}
+/* ------------------------ background-color --------------------------- */
+
+.bc-m{
+    background-color: var(--main-color);
+}
+.bc-s{
+    background-color: var(--secondary-color);
+}
+.bc-p{
+    background-color: var(--primary-color);
+}
+
+/* -------------------------- font-size ------------------------- */
+.fs-20{
+    font-size: 20px;
+}
+.fs-15{
+    font-size: 15px;
+}
+.fs-25{
+    font-size: 25px;
+}
+.fs-35{
+    font-size: 35px;
+}
+.fs-40{
+    font-size: 40px;
+}
+
+/* -------------------------------- flex ------------------ */
+.df{
+    display: flex;
+}
+.df-alcenter{
+    display: flex;
+    align-items: center;
+}
+.df-alcenter-jccenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.df-alcenter-jcbet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ------------------------------ font weight -------------------- */
+.fwbold{
+    font-weight: bold;
+}
+

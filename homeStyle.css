@@ -1,0 +1,99 @@
+section {
+    position: relative;
+    height: calc(100vh - 116px);
+}
+
+.home {
+    flex: 2;
+    margin-left: 150px;
+}
+
+.home .hallo {
+    margin: 150px 0 60px;
+}
+
+.home div {
+    word-spacing: 1px;
+}
+
+.home .hallo .name {
+    font-family: 'Satisfy', cursive;
+    word-spacing: 5px;
+    margin-left: 10px;
+}
+
+.home .des {
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.home button {
+    margin-top: 90px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.home button a{
+    display: none;
+}
+
+.home button:hover {
+    color: var(--main-color);
+}
+
+section .img {
+    flex: 0.5;
+    margin: 120px 200px;
+    padding: 40px 80px;
+    position: relative;
+}
+
+section img {
+    width: 400px;
+}
+
+section .img::before,
+section .img::after {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 100px;
+}
+
+section .img::before {
+    left: 0px;
+    top: 0px;
+    border-top: 10px solid var(--primary-color);
+    border-left: 10px solid var(--primary-color);
+}
+
+section .img::after {
+    bottom: -30px;
+    right: 0;
+    border-bottom: 10px solid var(--primary-color);
+    border-right: 10px solid var(--primary-color);
+}
+
+.icons {
+    /* position: absolute;
+    bottom: -110px;
+    left: 150px; */
+    margin-top: 60px;
+}
+
+.icons i {
+    padding: 6px;
+    width: 40px;
+    margin-right: 10px;
+    font-size: 28px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: var(--main-color);
+}

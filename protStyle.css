@@ -1,0 +1,37 @@
+section{
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    gap: 50px;
+}
+
+.pro{
+    background-color: var(--sercive-color);
+    /* margin: 40px 50px; */
+    border-radius: 15px;
+    color: var(--secondary-color);
+}
+.pro img{
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.pro .pro-descripction{
+    flex-direction: column;
+    margin: 20px;
+}
+
+.pro .pro-see{
+    margin: 20px;
+}
+.pro .pro-see button{
+    border: none ;
+    padding: 10px;
+    border-radius: 10px;
+}
+.go a{
+    display: none;
+}
